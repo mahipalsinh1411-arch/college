@@ -1,0 +1,302 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+<title>Marwadi University</title> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" 
+rel="stylesheet" /> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+rel="stylesheet" /> 
+<style> 
+body { 
+background-color: #f8faf8; 
+scroll-behavior: smooth; 
+} 
+.navbar .apply-btn { 
+background: linear-gradient(45deg, #ff6b6b, #f06595); 
+color: white !important; 
+border-radius: 50px; 
+padding: 8px 20px; 
+transition: background 0.3s ease, transform 0.2s ease; 
+} 
+.navbar .apply-btn:hover { 
+background: linear-gradient(45deg, #f06595, #ff6b6b); 
+transform: scale(1.05); 
+} 
+.section-card { 
+background: white; 
+border-radius: 10px; 
+padding: 30px; 
+margin-bottom: 30px; 
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+transition: transform 0.3s ease; 
+} 
+.section-card:hover { 
+       transform: translateY(-5px); 
+    } 
+ 
+    .section-title { 
+      color: #333; 
+      font-weight: 600; 
+      margin-bottom: 20px; 
+      text-align: center; 
+    } 
+ 
+    .mission-points { 
+      list-style: none; 
+      padding-left: 0; 
+    } 
+ 
+    .mission-points li { 
+      margin-bottom: 10px; 
+      position: relative; 
+      padding-left: 25px; 
+    } 
+ 
+    .mission-points li:before { 
+      content: "•"; 
+      color: #007bff; 
+      font-size: 20px; 
+      position: absolute; 
+      left: 0; 
+    } 
+ 
+    .event-card, 
+    .recruiter-card { 
+      background: white; 
+      border-radius: 10px; 
+      overflow: hidden; 
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+      margin-bottom: 20px; 
+      transition: transform 0.3s ease; 
+    } 
+ 
+    .event-card:hover, 
+    .recruiter-card:hover { 
+      transform: translateY(-5px); 
+    } 
+   .event-card img { 
+      height: 200px; 
+      object-fit: cover; 
+    } 
+ 
+    .footer { 
+      background-color: #343a40; 
+      color: white; 
+      padding: 40px 0 20px; 
+      text-align: center; 
+    } 
+  </style> 
+</head> 
+ 
+<body> 
+ 
+  <!-- Navigation --> 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"> 
+    <div class="container"> 
+      <a class="navbar-brand" href="#">Marwadi University</a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs
+target="#navbarNav"> 
+        <span class="navbar-toggler-icon"></span> 
+      </button> 
+      <div class="collapse navbar-collapse" id="navbarNav"> 
+        <ul class="navbar-nav ms-auto"> 
+          <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li> 
+          <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li> 
+          <li class="nav-item"><a class="nav-link" href="#outcomes">Outcomes</a></li> 
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li> 
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li> 
+          <li class="nav-item"><a class="nav-link" href="#recruiters">Recruiters</a></li> 
+        </ul> 
+        <a href="#apply" class="btn apply-btn ms-3">Apply Now</a> 
+      </div> 
+    </div> 
+  </nav> 
+ 
+  <div class="container content my-5"> 
+ 
+    <!-- Vision --> 
+    <section id="vision"> 
+      <div class="section-card"> 
+        <h2 class="section-title">Vision</h2> 
+      <p class="text-center">To be a leading educational institution recognized for excellence in 
+academics, research, 
+          and innovation, committed to nurturing global leaders and professionals with integrity and 
+vision.</p> 
+      </div> 
+    </section> 
+ 
+    <!-- Mission --> 
+    <section id="mission"> 
+      <div class="section-card"> 
+        <h2 class="section-title">Mission</h2> 
+        <ul class="mission-points"> 
+          <li>Provide world-class education in technology and management.</li> 
+          <li>Encourage innovation, research, and entrepreneurship.</li> 
+          <li>Develop ethical leaders with social responsibility.</li> 
+          <li>Foster global exposure and collaboration.</li> 
+        </ul> 
+      </div> 
+    </section> 
+ 
+    <!-- Program Specific Outcomes --> 
+    <section id="outcomes"> 
+      <div class="section-card"> 
+        <h2 class="section-title">Program Specific Outcomes</h2> 
+        <ul> 
+          <li>Analyze and design solutions for real-world problems.</li> 
+          <li>Apply modern tools and techniques in technical projects.</li> 
+          <li>Develop leadership, communication, and teamwork skills.</li> 
+          <li>Adapt to emerging trends in technology and business sectors.</li> 
+        </ul> 
+      </div> 
+    </section> 
+ 
+    <!-- Courses Offered --> 
+    <section id="courses"> 
+      <div class="section-card"> 
+        <h2 class="section-title">Courses Offered</h2> 
+        <div class="row text-center"> 
+          <div class="col-md-4 mb-4"> 
+            <div class="card shadow-sm h-100"> 
+              <div class="card-body"> 
+                <h5 class="card-title">B.Tech</h5> 
+                <p class="card-text">Engineering courses in Computer Science, Mechanical, Electrical, 
+etc.</p> 
+  </div> 
+            </div> 
+          </div> 
+          <div class="col-md-4 mb-4"> 
+            <div class="card shadow-sm h-100"> 
+              <div class="card-body"> 
+                <h5 class="card-title">MBA</h5> 
+                <p class="card-text">Programs focusing on marketing, finance, and leadership.</p> 
+              </div> 
+            </div> 
+          </div> 
+          <div class="col-md-4 mb-4"> 
+            <div class="card shadow-sm h-100"> 
+              <div class="card-body"> 
+                <h5 class="card-title">M.Sc</h5> 
+                <p class="card-text">Advanced studies in science and research-oriented 
+disciplines.</p> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </section> 
+ 
+    <!-- Image Gallery --> 
+    <section id="gallery" class="gallery-section"> 
+      <div class="section-card"> 
+        <h2 class="section-title">Image Gallery of Events</h2> 
+        <div class="row"> 
+          <div class="col-lg-3 col-md-6 mb-4"> 
+            <div class="event-card"> 
+              <img src="fest1.jpg" alt="Event 1" class="img-fluid"> 
+              <div class="p-3"> 
+                <h6 class="text-center">Event 1</h6> 
+                <p class="text-center text-muted small">Tech Fest 2024</p> 
+              </div> 
+            </div> 
+          </div> 
+          <div class="col-lg-3 col-md-6 mb-4"> 
+            <div class="event-card"> 
+              <img src="sport.jpg" alt="Event 2" class="img-fluid"> 
+              <div class="p-3"> 
+                <h6 class="text-center">Event 2</h6> 
+                <p class="text-center text-muted small">Sports Meet</p> 
+   </div> 
+            </div> 
+          </div> 
+          <div class="col-lg-3 col-md-6 mb-4"> 
+            <div class="event-card"> 
+              <img src="cfest.jpg" alt="Event 3" class="img-fluid"> 
+              <div class="p-3"> 
+                <h6 class="text-center">Event 3</h6> 
+                <p class="text-center text-muted small">Cultural Fest</p> 
+              </div> 
+            </div> 
+          </div> 
+          <div class="col-lg-3 col-md-6 mb-4"> 
+            <div class="event-card"> 
+              <img src="4guest.jpg" alt="Event 4" class="img-fluid"> 
+              <div class="p-3"> 
+                <h6 class="text-center">Event 4</h6> 
+                <p class="text-center text-muted small">Guest Lectures</p> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </section> 
+ 
+    <!-- Top Recruiters --> 
+    <section id="recruiters" class="recruiters-section"> 
+      <div class="section-card"> 
+        <h2 class="section-title">Top Recruiters</h2> 
+        <div class="row"> 
+          <div class="col-lg-3 col-md-6 mb-4"> 
+            <div class="recruiter-card d-flex flex-column align-items-center justify-content-center h
+100 text-center"> 
+              <i class="fab fa-microsoft text-primary mb-3" style="font-size: 2.5rem;"></i> 
+              <h5>Microsoft</h5> 
+              <p class="text-muted">Leading Technology Solutions</p> 
+            </div> 
+          </div> 
+          <div class="col-lg-3 col-md-6 mb-4"> 
+            <div class="recruiter-card d-flex flex-column align-items-center justify-content-center h-100 text-center"> 
+          
+ 
+ 
+ 
+ 
+  
+    <i class="fab fa-google text-danger mb-3" style="font-size: 2.5rem;"></i> 
+              <h5>Google</h5> 
+              <p class="text-muted">Global Search & AI Innovations</p> 
+            </div> 
+          </div> 
+          <div class="col-lg-3 col-md-6 mb-4"> 
+            <div class="recruiter-card d-flex flex-column align-items-center justify-content-center h
+100 text-center"> 
+              <i class="fab fa-amazon text-warning mb-3" style="font-size: 2.5rem;"></i> 
+              <h5>Amazon</h5> 
+              <p class="text-muted">E-Commerce & Cloud Services</p> 
+            </div> 
+          </div> 
+          <div class="col-lg-3 col-md-6 mb-4"> 
+            <div class="recruiter-card d-flex flex-column align-items-center justify-content-center h
+100 text-center"> 
+              <i class="fab fa-apple text-dark mb-3" style="font-size: 2.5rem;"></i> 
+              <h5>Apple</h5> 
+              <p class="text-muted">Innovation in Consumer Electronics</p> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </section> 
+ 
+    <!-- Apply Now Section --> 
+    <section id="apply" class="section-card text-center"> 
+      <h2 class="section-title">Join Marwadi University</h2> 
+      <p>Apply now to be a part of our thriving academic community. Shape your future with 
+world-class education and 
+        endless opportunities!</p> 
+      <a href="https://www.marwadiuniversity.ac.in/" target="_blank" class="btn btn
+primary">Apply Here</a> 
+    </section> 
+ 
+  </div> <!-- Footer --> 
+<footer class="footer"> 
+<div class="container"> 
+<p>&copy; 2025 Marwadi University. All rights reserved.</p> 
+</div> 
+</footer> 
+<script 
+src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></scri
+ pt> 
+</body> 
+</html>
